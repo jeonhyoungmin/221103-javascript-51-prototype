@@ -1,0 +1,12 @@
+class Test {
+  constructor(one, two) {
+    this.one = one;
+    this.two = two;
+  }
+}
+
+let instanceTest = new Test(7,8);
+Test.prototype.makeString = function() {
+  return this.one + " " + this.two;
+}
+console.log(instanceTest.makeString());
